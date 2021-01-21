@@ -12,7 +12,7 @@ function App() {
   const theme = createMuiTheme();
   return (
     <Container maxWidth="md">
-      <h1 style={{ margin: theme.spacing(2, 50, 2, 20) }}>LATEST JOBS</h1>
+      <h1 style={{ textAlign: "center" }}>LATEST JOBS</h1>
       {loading && <h1>LOADING...</h1>}
       {error && <h1>ERROR!! TRY REFRESHING !!</h1>}
       {jobs.map((job) => {
